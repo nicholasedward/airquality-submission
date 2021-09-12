@@ -1,0 +1,111 @@
+
+/* FONTS */
+
+@font-face {
+    font-family: 'ReithSans';
+    src:  url('src/fonts/BBCReithSans_W_Rg.woff') format('woff');
+    font-weight: 300;
+  }
+
+@font-face {
+    font-family: 'ReithSerif';
+    src:  url('src/fonts/BBCReithSerif_W_Rg.woff') format('woff');
+    font-weight: 300;
+}
+
+/* CHECK CITY DATA FONT */
+.check-city {
+    font-family: ReithSerif, Arial, Helvetica, sans-serif !important;
+    color: #3F3F42 !important;
+}
+
+/* OVERIDE ELEMENT DEFAULTS */
+
+h1 {
+    font-family: ReithSerif, Arial, Helvetica, sans-serif !important;
+    color: #3F3F42 !important;
+}
+
+p {
+    font-family: ReithSans, Arial, Helvetica, sans-serif !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #3F3F42 !important;
+}
+
+/* OPACITY CLASSES */
+
+.faded-img {
+    opacity: 0.3 !important;
+}
+
+/* INLINE CLASSES */
+
+.cig-div {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
+.lang-div{
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+/* PADDING CLASSES */
+
+.city-data-pad {
+    padding-top: 6px !important;
+}
+
+.lang-pad {
+    padding-bottom: 24px !important;
+}
+
+.drop-pad {
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
+/* SELECT ELEMENT STYLING  */
+
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #000000 !important;
+}
+
+.input, .textarea, .select select {
+    background-color: white;
+    border-color: #dddddd !important;
+    border-radius: 4px;
+    color: #000000;
+}
+
+/* FULL SCREEN MARGINS */
+
+.section {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* MEDIA QUERIES FOR APP ELEMENT MARGINS */
+
+@media only screen and (max-width: 600px) {
+    .section, .hero-body {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+.section, .hero-body {
+    margin-left: 50px;
+    margin-right: 50px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .section, .hero-body {
+      margin-left: 120px;
+      margin-right: 120px;
+    }
+}
